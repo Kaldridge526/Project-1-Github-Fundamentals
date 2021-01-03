@@ -22,13 +22,23 @@ The configuration details of each machine may be found below:
 
 Access Policies
 The machines on the internal network are not exposed to the public Internet.
+Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
 Machines within the network can only be accessed by accessing the DVWA container in the Jump Box VM.
-Elk Configuration
+
+The only machines that can access the ELK server are 104.42.109.198 , and the Jump Box VM at IP 10.0.0.6 through a peering connection.
+
+ELK Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-What is the main advantage of automating configuration with Ansible? Ansible allows you to easily scale your containers and manage them (instead of managing one at a time).
+You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.
 The playbook implements the following tasks:
+
+Install Docker
+Download Image
+Configure container
+Create playbook to install container with docker and Filebeat and Metricbeat.
+Run playbook to launch the container
 
 TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 Install Docker
@@ -36,7 +46,7 @@ Install Pip3
 Checks on memory space
 Downloads and launces the Elk Docker Container
 
-arget Machines & Beats
+Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
 10.0.0.7
