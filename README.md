@@ -24,3 +24,14 @@ Access Policies
 The machines on the internal network are not exposed to the public Internet.
 
 Machines within the network can only be accessed by accessing the DVWA container in the Jump Box VM.
+Elk Configuration
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+
+What is the main advantage of automating configuration with Ansible? Ansible allows you to easily scale your containers and manage them (instead of managing one at a time).
+The playbook implements the following tasks:
+
+TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+Install Docker
+Install Pip3
+Checks on memory space
+Downloads and launces the Elk Docker Container
