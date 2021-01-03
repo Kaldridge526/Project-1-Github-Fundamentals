@@ -19,3 +19,8 @@ Load Balancers protect against DoS attacks. The advantage of the jump box is tha
 Filebeat helps generate and organize log files to send to Logstash and Elasticsearch. Specifically, it logs information about the file system, including which files have changed and when.
 Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 The configuration details of each machine may be found below:
+
+Access Policies
+The machines on the internal network are not exposed to the public Internet.
+
+Machines within the network can only be accessed by accessing the DVWA container in the Jump Box VM.
